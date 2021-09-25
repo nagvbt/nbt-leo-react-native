@@ -31,16 +31,12 @@ module.exports = {
     'testing-library',
   ],
   rules: {
-    'import/newline-after-import': ['error', { count: 2 }],
+    'react/prop-types': 'off',
+    'import/newline-after-import': ['error', { count: 1 }],
     'prettier/prettier': 'error',
     'react/jsx-no-duplicate-props': [1, { ignoreCase: false }],
     // prevent eslint to complain about the "styles" variable being used before it was defined
     'no-use-before-define': ['error', { variables: false }],
     'react-hooks/rules-of-hooks': 'error',
-    // ignore errors for the react-navigation package
-    'react/prop-types': [
-      'error',
-      { ignore: ['navigation', 'navigation.navigate'] },
-    ],
-  },
+    },
 };

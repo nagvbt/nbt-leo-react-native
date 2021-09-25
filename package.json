@@ -6,8 +6,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "lint": "eslint .  --max-warnings 0",
-    "lint-fix": "eslint --fix --max-warnings 0"
+    "lint": "eslint \"./src/**/*.jsx\"  --max-warnings 0",
+    "lint-fix": "eslint --fix  \"./src/**/*.jsx\" --max-warnings 0"
   },
   "dependencies": {
     "eslint-plugin-testing-library": "^4.12.4",
@@ -16,7 +16,10 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-native-web": "~0.13.12"
+    "react-native-elements": "^3.4.2",
+    "react-native-safe-area-context": "3.2.0",
+    "react-native-web": "~0.13.12",
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
