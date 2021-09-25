@@ -10,6 +10,7 @@
     "lint-fix": "eslint --fix --max-warnings 0"
   },
   "dependencies": {
+    "eslint-plugin-testing-library": "^4.12.4",
     "expo": "~42.0.1",
     "expo-status-bar": "~1.0.4",
     "react": "16.13.1",

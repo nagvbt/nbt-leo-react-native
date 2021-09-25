@@ -28,6 +28,7 @@ module.exports = {
     'react-hooks',
     'prettier',
     'import',
+    'testing-library',
   ],
   rules: {
     'import/newline-after-import': ['error', { count: 2 }],
