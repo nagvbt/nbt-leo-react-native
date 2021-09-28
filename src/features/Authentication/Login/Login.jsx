@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import Button from '../../../ui-lib/components/atoms/Button';
-import Input from '../../../ui-lib/components/atoms/Input';
+import Button from '_atoms/Button';
+import Input from '_atoms/Input';
 
 const Login = ({ navigation }) => {
   const onPressHandler = () => {
@@ -11,7 +11,7 @@ const Login = ({ navigation }) => {
     <View style={styles.container}>
       <Input
         placeholder='Enter Mobile Number'
-        errorStyle={{ color: 'red' }}
+        errorStyle={styles.errorStyle}
         errorMessage='ENTER A VALID ERROR HERE'
       />
       <View style={styles.btnContainer}>
@@ -31,6 +31,9 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  errorStyle: {
+    color: 'red',
   },
 });
 

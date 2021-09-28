@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import Button from '../../../ui-lib/components/atoms/Button/Button';
+import Button from '_atoms/Button/Button';
 
 const SignUp = ({ navigation }) => {
   const onPressHandler = () => {
