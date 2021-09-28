@@ -13,6 +13,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:react-hooks/recommended',
     'plugin:promise/recommended',
+    '@react-native-community',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -38,5 +39,11 @@ module.exports = {
     // prevent eslint to complain about the "styles" variable being used before it was defined
     'no-use-before-define': ['error', { variables: false }],
     'react-hooks/rules-of-hooks': 'error',
+    'jsx-quotes': ['error', 'prefer-single'],
+  },
+  settings: {
+    'import/resolver': {
+      'babel-module': {},
     },
+  },
 };
