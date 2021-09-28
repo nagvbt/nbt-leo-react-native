@@ -1,18 +1,31 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
-import Login from './src/features/Login/Login';
+import Login from './src/features/Authentication/Login/Login';
+import SignUp from './src/features/Authentication/SignUp/SignUp';
 import { ThemeProvider } from 'react-native-elements';
 import Theme from './src/theme/Theme';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <ThemeProvider theme={Theme}>
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Login />
-        <StatusBar style='auto' />
-      </View>
+      <NavigationContainer>
+        <Stack.Navigator initialRoute='Login'>
+          <Stack.Screen
+            name='Login'
+            component={Login}
+            options={{ title: 'Choose Location' }}
+          />
+          <Stack.Screen
+            name='SignUp'
+            component={SignUp}
+            options={{ title: 'Create Account' }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
     </ThemeProvider>
   );
 }
