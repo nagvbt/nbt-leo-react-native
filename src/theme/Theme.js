@@ -1,7 +1,7 @@
+import { colors } from './colors'
 const Theme = {
-  colors: {
-    primary: 'red',
-  },
+  colors,
+ 
 };
 
 export default Theme;

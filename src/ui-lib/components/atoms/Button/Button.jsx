@@ -22,14 +22,14 @@ const Button = ({
   />
 );
 
-Button.PropTypes = {
+Button.propTypes = {
   type: PropTypes.oneOf(['solid', 'clear', 'outline']),
   title: PropTypes.string,
   icon: PropTypes.elementType,
-  raised: PropTypes.boolean,
-  disabled: PropTypes.boolean,
+  raised: PropTypes.bool,
+  disabled: PropTypes.bool,
   onPress: PropTypes.func,
-  containerViewStyle: PropTypes.object,
+  containerViewStyle: PropTypes.objectOf(PropTypes.object),
 };
 
 Button.defaultProps = {
