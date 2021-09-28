@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "target": "es2015",
+        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "paths": {
+            "_assets/*": [
+                "./src/assets/*"
+            ],
+            "_features/*": [
+                "./src/features/*"
+            ],
+            "_atoms/*": [
+                "./src/ui-lib/components/atoms/*"
+            ],
+            "_molecules/*": [
+                "./src/ui-lib/components/molecules/*"
+            ],
+            "_organisms/*": [
+                "./src/ui-lib/components/organisms/*"
+            ],
+        }
+    }
+}
