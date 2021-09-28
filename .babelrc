@@ -16,6 +16,7 @@
             ],
             "alias": {
                 "_assets": "./assets",
+                "_theme": "./src/theme",
                 "_features": "./src/features",
                 "_components": "./src/ui-lib",
                 "_atoms": "./src/ui-lib/components/atoms",

@@ -9,7 +9,15 @@
     "lint": "eslint \"./src/**/*.jsx\"  --max-warnings 0",
     "lint-fix": "eslint --fix  \"./src/**/*.jsx\" --max-warnings 0",
     "format": "prettier --list-different \"./src/**/*.{js,jsx,ts,tsx,json,htm,html}\"",
-    "format:fix": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,htm,html}\""
+    "format:fix": "prettier --write \"./src/**/*.{js,jsx,ts,tsx,json,htm,html}\"",
+    "----------test": "active development of tests, watch files for changes and re-runs all tests",
+    "test": "jest --watch --coverage=false --changedSince=origin/master",
+    "-----------testDebug": "debug, console.logs and only re-runs the file that was changed",
+    "testDebug": "jest -o --watch --coverage=false",
+    "-----------testFinal": "displays code coverage in cli and updates the code coverage html",
+    "testFinal": "jest",
+    "-----------updateSnapshots": "when a screen/component is updated, the test snapshots will throw an error, this updates them",
+    "updateSnapshots": "jest -u --coverage=false"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.0.7",
@@ -43,8 +51,18 @@
     "eslint-plugin-react": "^7.26.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-react-native": "^3.11.0",
+    "jest": "^27.2.3",
     "prettier": "^2.4.1",
     "react-test-renderer": "^17.0.2"
   },
-  "private": true
+  "private": true,
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*|react-native-elements|@react-native-elements/.*)"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ]
+  }
 }

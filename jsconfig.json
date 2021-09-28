@@ -8,6 +8,9 @@
             "_assets/*": [
                 "./src/assets/*"
             ],
+            "_theme/*": [
+                "./src/theme/*"
+            ],
             "_features/*": [
                 "./src/features/*"
             ],

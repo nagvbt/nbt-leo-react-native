@@ -11,6 +11,7 @@ module.exports = function (api) {
           alias: {
             // define aliases to shorten the import paths
             _assets: './assets',
+            _theme: './src/theme',
             _features: './src/features',
             _components: './src/ui-lib',
             _atoms: './src/ui-lib/components/atoms',
