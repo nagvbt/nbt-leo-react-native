@@ -10,7 +10,7 @@ const Login = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Input
-        placeholder='Enter Mobile Number'
+        placeholder='Enter Mobile Number k '
         errorStyle={styles.errorStyle}
         errorMessage='ENTER A VALID ERROR HERE'
       />
