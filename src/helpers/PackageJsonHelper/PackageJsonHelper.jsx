@@ -1,6 +1,6 @@
 // @flow
 /* eslint import/no-unresolved: 2 */
-const packageJson = require('../../package.json');
+const packageJson = require('../../../package.json');
 
 /** *
  * Get the App 'name' from Package.json
