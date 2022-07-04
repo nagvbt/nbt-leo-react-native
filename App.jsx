@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Login from '_features/Authentication/Login/Login';
+import Login from '_features/Authentication/Login';
 import SignUp from '_features/Authentication/SignUp/SignUp';
 import { ThemeProvider } from 'react-native-elements';
 import Theme from './src/theme/Theme';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-//import ChooseLocation from '_features/ChooseLocation';
+// import ChooseLocation from '_features/ChooseLocation';
 
 const Stack = createNativeStackNavigator();
 

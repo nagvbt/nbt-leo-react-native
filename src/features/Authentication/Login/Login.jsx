@@ -11,7 +11,6 @@ const Login = ({ navigation }) => {
     <View style={styles.container}>
       <Input
         placeholder='Enter Mobile Number k '
-        errorStyle={styles.errorStyle}
         errorMessage='ENTER A VALID ERROR HERE'
       />
       <View style={styles.btnContainer}>
@@ -31,9 +30,6 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  errorStyle: {
-    color: 'red',
   },
 });
 

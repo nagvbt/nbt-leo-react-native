@@ -1,12 +1,12 @@
 module.exports = function (api) {
   api.cache(true);
   return {
-    presets: ['babel-preset-expo'],
+    presets: ['babel-preset-expo', '@babel/preset-env'],
     plugins: [
       [
         require.resolve('babel-plugin-module-resolver'),
         {
-          root: ['./src/'],
+          root: ['./'],
           extensions: ['.js', '.jsx', '.tsx', '.ios.js', '.android.js'],
           alias: {
             // define aliases to shorten the import paths

@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Input as RNVInput } from 'react-native-elements';
+import { StyleSheet } from 'react-native';
 // Version: 3.4.2
 // Author: Nag
 
 /**
  * Inputs allow users to enter text into a UI. They typically appear in forms and dialogs.
+ * errorStyle was Fixed
  */
 const Input = ({
   containerStyle,
@@ -13,7 +15,7 @@ const Input = ({
   disabledInputStyle,
   errorMessage,
   errorProps,
-  errorStyle,
+  // errorStyle,
   InputComponent,
   inputContainerStyle,
   inputStyle,
@@ -33,7 +35,7 @@ const Input = ({
     disabledInputStyle={disabledInputStyle}
     errorMessage={errorMessage}
     errorProps={errorProps}
-    errorStyle={errorStyle}
+    errorStyle={styles.errorStyle}
     InputComponent={InputComponent}
     inputContainerStyle={inputContainerStyle}
     inputStyle={inputStyle}
@@ -73,7 +75,7 @@ Input.propTypes = {
   /**
    * add styling to error message (optional)
    */
-  errorStyle: PropTypes.objectOf(PropTypes.object),
+  // errorStyle: PropTypes.objectOf(PropTypes.object),
   /**
    *React Native Component: component that will be rendered in place of the React Native TextInput (optional)
    */
@@ -131,7 +133,7 @@ Input.defaultProps = {
   disabledInputStyle: {},
   errorMessage: '',
   errorProps: {},
-  errorStyle: undefined,
+  // errorStyle: undefined,
   InputComponent: undefined,
   inputContainerStyle: {},
   inputStyle: {},
@@ -145,4 +147,10 @@ Input.defaultProps = {
   rightIcon: undefined,
   rightIconContainerStyle: {},
 };
+
+const styles = StyleSheet.create({
+  errorStyle: {
+    color: 'red',
+  },
+});
 export default Input;

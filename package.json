@@ -24,6 +24,7 @@
     "@react-navigation/bottom-tabs": "^6.0.7",
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.1.0",
+    "@testing-library/react-native": "^7.2.0",
     "eslint-plugin-testing-library": "^4.12.4",
     "expo": "~42.0.1",
     "expo-status-bar": "~1.0.4",
@@ -37,10 +38,11 @@
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
     "@react-native-community/eslint-config": "^3.0.1",
     "@testing-library/jest-native": "^4.0.2",
-    "@testing-library/react-native": "^7.2.0",
+    "babel-jest": "^27.2.4",
     "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
@@ -53,7 +55,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-react-native": "^3.11.0",
     "husky": "^7.0.2",
-    "jest": "^27.2.3",
+    "jest": "^27.2.4",
     "lint-staged": "^11.1.2",
     "prettier": "^2.4.1",
     "react-test-renderer": "^17.0.2"
@@ -62,7 +64,7 @@
   "jest": {
     "preset": "jest-expo",
     "transformIgnorePatterns": [
-      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*|react-native-elements|@react-native-elements/.*)"
+      "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
     ],
     "setupFilesAfterEnv": [
       "@testing-library/jest-native/extend-expect"
