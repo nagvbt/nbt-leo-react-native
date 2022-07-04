@@ -13,6 +13,7 @@ module.exports = function (api) {
             _assets: './assets',
             _theme: './src/theme',
             _features: './src/features',
+            _helpers: './src/helpers',
             _components: './src/ui-lib',
             _atoms: './src/ui-lib/components/atoms',
             _molecules: './src/ui-lib/components/molecules',
