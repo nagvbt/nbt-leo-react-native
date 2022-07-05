@@ -1,4 +1,5 @@
 module.exports = {
+  parser: '@babel/eslint-parser',
   env: {
     browser: true,
     es2021: true,
@@ -15,6 +16,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:promise/recommended',
     '@react-native-community',
+    'plugin:flowtype/recommended',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -24,6 +26,7 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
+    'flowtype',
     'promise',
     'react',
     'react-native',

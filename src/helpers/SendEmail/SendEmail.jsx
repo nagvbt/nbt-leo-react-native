@@ -4,7 +4,6 @@ Package used: expo-mail-composer
 https://docs.expo.dev/versions/latest/sdk/mail-composer/
 */
 
-// @flow
 import * as MailComposer from 'expo-mail-composer';
 
 import {
